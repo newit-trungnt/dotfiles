@@ -1,5 +1,4 @@
 local status, packer = pcall(require, "packer")
-print("Plug Lua")
 if (not status) then
   print("Packer is not installed")
   return
