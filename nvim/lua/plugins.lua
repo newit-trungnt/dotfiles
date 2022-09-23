@@ -23,5 +23,17 @@ packer.startup(function(use)
   use "nvim-lua/plenary.nvim"
   use { "nvim-telescope/telescope-file-browser.nvim" }
   use { "dracula/vim", name = "dracula" }
-  -- Your plugins go here
+
+  use 'onsails/lspkind-nvim' -- vscode-like pictograms
+  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+  use 'hrsh7th/nvim-cmp' -- Completion
+
+  use 'neovim/nvim-lspconfig' -- LSP
+
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
+
+  use 'L3MON4D3/LuaSnip'
+
 end)
